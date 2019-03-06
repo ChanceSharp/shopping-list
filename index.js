@@ -5,7 +5,7 @@ function createListHtml(value){
 function lineThroughItem(){
 	$('.shopping-list').on('click', '.shopping-item-toggle', function(e){
 		e.preventDefault();
-		$(e.target).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
+		$(e.this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
 
 	})
 }
@@ -13,7 +13,7 @@ function lineThroughItem(){
 function deleteItem(){
 	$('.shopping-list').on('click', '.shopping-item-delete', function(e){
 		e.preventDefault();
-		$(e.target).closest('li').remove();
+		$(e.this).closest('li').remove();
 	})
 }
 
